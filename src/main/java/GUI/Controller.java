@@ -50,12 +50,12 @@ public class Controller implements ActionListener {
                     view.getResultLabel().setText("Quotient:");
                     view.getRemainderLabel().setText("Remainder:");
                     results = firstPolynomial.divide(secondPolynomial);
-                    result = results[0];
-                    if (results[1] != null)
+                    result = results[1];
+                    if (results[0] != null)
                         view.getRemainderValueLabel().setText(results[1].toString());
                     else
-                        view.getRemainderValueLabel().setText("0");
-                    view.getResultValueLabel().setText(result.toString());
+                        view.getResultValueLabel().setText("0");
+                    view.getRemainderValueLabel().setText(result.toString());
                     break;
                 case "Derive":
                     view.getResultLabel().setText("Result:");
